@@ -98,9 +98,9 @@ int main(){
   char months[][10]={"January  ", "Febuary  ", "March    ", "April    ", "May      ", "June     ", "July    ", "August   ", "September", "October  ", "November ", "December "};
   FILE *file;
   char file_name [100];
-  //printf("Enter file name: ");
-  //scanf("%s", &file_name);
-  file = fopen("sample.txt", "r");
+  printf("Enter file name: ");
+  scanf("%s", &file_name);
+  file = fopen(file_name, "r");
   if (file == NULL)
   {
     printf("Error opening file.\n");
